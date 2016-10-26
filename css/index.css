@@ -7,194 +7,163 @@ body {
   border: 0;
 }
 
-.music {
-  width: 1.5rem;
-  height: 1.5rem;
-  position: fixed;
-  top: 1rem;
-  right: 1rem;
-  z-index: 1000;
-  background: url(../img/normalmusic.png) no-repeat center;
+p, div {
+  margin: 0;
+  padding: 0;
+}
+
+.conSwiper {
+  width: 100%;
+  height: 100%;
+}
+.conSwiper .wraSwiper {
+  width: 100%;
+  height: 100%;
+}
+.conSwiper .wraSwiper .page1 {
+  background: url("../img/page1-1.png") no-repeat;
   background-size: cover;
+  display: flex;
+  justify-content: center;
 }
-
-.swiper-container {
-  width: 100%;
-  height: 100%;
-}
-
-.swiper-slide {
-  width: 100%;
-  height: 100%;
-  background: url("../img/page-1.jpg") no-repeat center;
-  background-size: cover;
-}
-.swiper-slide .page {
-  width: 100%;
-  height: 100%;
-  background: url("../img/page-2.png") no-repeat center;
-  background-size: cover;
-}
-
-.page1 {
-  width: 100%;
-  height: 100%;
-}
-.page1 .page {
-  width: 100%;
-  height: 100%;
-}
-.page1 .page #resume1 {
-  width: 5.6rem;
-  height: 12.6rem;
+.conSwiper .wraSwiper .page1 .pageImg {
+  width: 14.2rem;
+  height: 14.2rem;
   position: absolute;
-  top: 5rem;
+  top: 2.4rem;
 }
-.page1 .page #resume2 {
-  width: 5.01rem;
-  height: 11rem;
+.conSwiper .wraSwiper .page1 .pageImg .pageImg-1 {
+  width: 14.2rem;
+  height: 14.2rem;
+  animation: pageImg 0.5s 4s;
+}
+@keyframes pageImg {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.conSwiper .wraSwiper .page1 .resume1 {
+  width: 12.15rem;
+  height: 2.95rem;
   position: absolute;
-  top: 4.5rem;
-  left: 3.9rem;
-}
-.page1 .page #resume3 {
-  width: 5.6rem;
-  height: 12.6rem;
-  position: absolute;
-  top: 6.5rem;
-  left: 6.9rem;
-}
-.page1 .page #resume4 {
-  width: 5.6rem;
-  height: 12.6rem;
-  position: absolute;
-  top: 4.3rem;
-  left: 10.9rem;
-}
-.page1 .page #img-1 {
-  width: 1.9rem;
-  height: 1.85rem;
-  position: absolute;
-  top: 9.2rem;
-  left: 3.1rem;
-  z-index: 200;
-}
-.page1 .page #img-2 {
-  width: 1.85rem;
-  height: 1.3rem;
-  position: absolute;
-  top: 10.5rem;
-  left: 5rem;
-  z-index: 200;
-}
-.page1 .page #img-3 {
-  width: 1.7rem;
-  height: 1.8rem;
-  position: absolute;
-  top: 9.8rem;
-  left: 8.1rem;
-  z-index: 200;
-}
-.page1 .page #img-4 {
-  width: 2rem;
-  height: 1.6rem;
-  position: absolute;
-  top: 11.5rem;
-  left: 10.8rem;
-  z-index: 200;
-}
-
-.page2 {
-  width: 100%;
-  height: 100%;
-}
-.page2 .page {
-  width: 100%;
-  height: 100%;
-}
-.page2 .page #pg2Img-1 {
-  width: 9.5rem;
-  height: 5rem;
-  position: absolute;
-  top: 5rem;
-  left: 1rem;
-}
-.page2 .page #pg2Img-2 {
-  width: 10.4rem;
-  height: 4.45rem;
-  position: absolute;
-  bottom: 5rem;
-  right: 0.5rem;
-}
-.page2 .page .info {
-  font-size: 1rem;
-}
-.page2 .page .baseInfo {
-  color: #676767;
-  font-weight: bold;
-  position: absolute;
-  z-index: 999;
   top: 8rem;
-  left: 4rem;
-  opacity: 1.4;
-  border-radius: 0.4rem;
-  letter-spacing: 2px;
 }
-.page2 .page .eInfo {
-  position: absolute;
-  z-index: 999;
-  top: 9.5rem;
-  left: 4rem;
-  color: #676767;
-  font-weight: bold;
-  font-size: 0.7rem;
+.conSwiper .wraSwiper .page1 .resume1 .pageImg-2 {
+  width: 12.15rem;
+  height: 2.95rem;
 }
-.page2 .page .nameInfo {
-  color: #676767;
-  font-weight: bold;
+.conSwiper .wraSwiper .page1 .resume1 .pageImg-3 {
+  width: 2.1rem;
+  height: 4.6rem;
   position: absolute;
-  z-index: 999;
-  top: 11.5rem;
-  left: 4rem;
-  border-radius: 0.4rem;
-  letter-spacing: 1px;
+  left: 3.4rem;
+  top: -1rem;
 }
-.page2 .page .genderInfo {
-  color: #676767;
-  font-weight: bold;
+.conSwiper .wraSwiper .page1 .pageImg-4 {
+  width: 6rem;
+  height: 6rem;
   position: absolute;
-  z-index: 999;
-  top: 13.2rem;
-  left: 4rem;
-  letter-spacing: 1px;
+  right: 0;
+  bottom: 2.2rem;
 }
-.page2 .page .ageInfo {
-  color: #676767;
-  font-weight: bold;
+.conSwiper .wraSwiper .page1 .pageImg-5 {
+  width: 2.6rem;
+  height: 2.6rem;
   position: absolute;
-  z-index: 999;
-  top: 15rem;
-  left: 4rem;
-  border-radius: 0.4rem;
-  letter-spacing: 1px;
+  left: 0.2rem;
+  bottom: 9.5rem;
 }
-.page2 .page .iphoneInfo {
-  color: #676767;
-  font-weight: bold;
+.conSwiper .wraSwiper .page1 .pageImg-7 {
+  width: 3.3rem;
+  height: 3.3rem;
   position: absolute;
-  z-index: 999;
-  top: 17rem;
-  left: 4rem;
-  border-radius: 0.4rem;
-  letter-spacing: 1px;
+  top: 1.8rem;
+  left: 0.9rem;
 }
-.page2 .page .addInfo {
-  color: #676767;
-  font-weight: bold;
+.conSwiper .wraSwiper .page1 .resume2 {
+  width: 15.7rem;
+  height: 4.9rem;
   position: absolute;
-  z-index: 999;
-  top: 19rem;
+  bottom: 6.8rem;
+  display: flex;
+  justify-content: center;
+}
+.conSwiper .wraSwiper .page1 .resume2 .pageImg-6 {
+  width: 15.7rem;
+  height: 4.9rem;
+}
+.conSwiper .wraSwiper .page1 .resume2 .resume2-1 {
+  width: 15.7rem;
+  height: 4.9rem;
+  font-family: SimSun;
+  position: absolute;
+  top: 0;
+  text-align: center;
+  color: #5ac958;
+  font-weight: bold;
+  font-size: 2rem;
+  text-shadow: 0px 0px 0 #41b03f, 1px 1px 0 #32a130, 2px 2px 0 #249322, 3px 3px 0 #158413, 4px 4px 0 #067504, 5px 5px 0 #006600, 6px 6px 0 #005700, 7px 7px 6px rgba(0, 0, 0, 0.55), 7px 7px 1px rgba(0, 0, 0, 0.5), 0px 0px 6px rgba(0, 0, 0, 0.2);
+}
+.conSwiper .wraSwiper .page1 .resume2 .resume2-1 p {
+  line-height: 4.9rem;
+  font-size: 2rem;
+}
+.conSwiper .wraSwiper .page1 .pageImg-8 {
+  width: 7.8rem;
+  height: 0.8rem;
+  position: absolute;
+  top: 2.5rem;
+  right: 1rem;
+  z-index: 100;
+  transition: all 2s;
+  transform: translate(-50px, 50px) rotate(-30deg);
+}
+.conSwiper .wraSwiper .page1 .pageImg-9 {
+  width: 7.8rem;
+  height: 0.8rem;
+  position: absolute;
+  top: 17.5rem;
+  right: 0.8rem;
+  z-index: 100;
+  transition: all 2s 0.2s;
+  transform: translate(-50px, 50px) rotate(-30deg);
+}
+.conSwiper .wraSwiper .page1 .pageImg-10 {
+  width: 7.8rem;
+  height: 0.8rem;
+  position: absolute;
+  top: 11rem;
   left: 4rem;
-  border-radius: 0.4rem;
-  letter-spacing: 1px;
+  z-index: 100;
+  transition: all 2s 0.5s;
+  transform: translate(100px, -100px) rotate(-30deg);
+}
+.conSwiper .wraSwiper .page1 .pageImg-11 {
+  width: 7.8rem;
+  height: 0.8rem;
+  position: absolute;
+  top: 8rem;
+  right: 5rem;
+  z-index: 100;
+  transition: all 2s  0.8s;
+  transform: translate(-50px, 50px) rotate(-30deg);
+}
+.conSwiper .wraSwiper .page1 .pageImg-12 {
+  width: 7.8rem;
+  height: 0.8rem;
+  position: absolute;
+  top: 16rem;
+  right: 6rem;
+  z-index: 100;
+  transition: all 2s 1.1s;
+  transform: translate(-50px, 50px) rotate(-30deg);
+}
+.conSwiper .wraSwiper .page2 {
+  width: 100%;
+  height: 100%;
+  background: url(../img/page2-1.jpg) no-repeat;
+  background-size: cover;
 }

@@ -5,7 +5,9 @@
     resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
     recalc = function() {
         //设置根字体大小
-        var tagFont = 20 * (docEl.clientWidth / 320)
+        var tagFont = 20 * (docEl.clientWidth / 320);
+        // console.log("docEl.clientWidth"+docEl.clientWidth);
+        // console.log("tagFont"+tagFont);
         if( tagFont > 30){
             docEl.style.fontSize =  '30px';
         }else{
