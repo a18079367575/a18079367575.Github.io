@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>resume</name>
+	<name>resume2</name>
 	<comment>Create By HBuilder</comment>
 	<projects>
 	</projects>
@@ -10,19 +10,13 @@
 			<arguments>
 			</arguments>
 		</buildCommand>
-		<buildCommand>
-			<name>com.pandora.projects.ui.MKeyBuilder</name>
-			<arguments>
-			</arguments>
-		</buildCommand>
 	</buildSpec>
 	<natures>
-		<nature>com.pandora.projects.ui.MKeyNature</nature>
 		<nature>com.aptana.projects.webnature</nature>
 	</natures>
 	<filteredResources>
 		<filter>
-			<id>1476500816983</id>
+			<id>1477211944278</id>
 			<name></name>
 			<type>10</type>
 			<matcher>
@@ -40,7 +34,7 @@
 			</matcher>
 		</filter>
 		<filter>
-			<id>1476503936700</id>
+			<id>1477214031823</id>
 			<name></name>
 			<type>26</type>
 			<matcher>
